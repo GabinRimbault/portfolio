@@ -1,0 +1,35 @@
+@use "../utils/responsive" as responsives;
+
+.menu_right{
+  display: none;
+  width: 40px;
+  position: fixed;
+  bottom: 0;
+  left: auto;
+  right: 40px;
+  z-index: 10;
+  color: $tertiary-color;
+
+  @include responsives.Tablet{
+    display: block;
+  }
+
+  &:after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0 auto;
+    background-color: $tertiary-color;
+  }
+
+  a{
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+  }
+}

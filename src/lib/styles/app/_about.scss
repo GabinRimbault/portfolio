@@ -1,0 +1,108 @@
+@use "../utils/responsive" as responsives;
+
+.about{
+  h2{
+    &:before {
+      content: "1.";
+      margin-right: 5px;
+      color: $hover-color;
+    }
+  }
+
+  .wrapper_about{
+    display: flex;
+    flex-direction: column;
+
+    .about_content{
+      max-width: 500px;
+    }
+
+    @include responsives.Tablet{
+      flex-direction: row;
+    }
+  }
+
+
+  .skills_list{
+    display: flex;
+
+    ul.skills{
+      padding: 0;
+      margin: 20px 0 0 50px;
+      list-style: none;
+
+      li{
+        position: relative;
+        margin-bottom: 10px;
+        padding-left: 20px;
+
+        &:before{
+          content: "▹";
+          position: absolute;
+          left: 0;
+          color: $hover-color;
+          font-size: 14px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+
+  .wrapper_img_about{
+    margin: 25px auto;
+    background-color: $hover-color;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 50px;
+    width: 250px;
+    height: 250px;
+
+    @include responsives.Tablet{
+      margin-bottom: inherit;
+      width: 300px;
+      height: 300px;
+    }
+
+    .img_about{
+      position: relative;
+      border-radius: 4px;
+      mix-blend-mode: multiply;
+      filter: grayscale(100%) contrast(1);
+      transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+      width: 250px;
+      height: 250px;
+
+      @include responsives.Tablet{
+        width: 300px;
+        height: 300px;
+      }
+
+      img{
+        max-width: 250px;
+        max-height: 250px;
+
+        @include responsives.Tablet{
+          max-width: 300px;
+          max-height: 300px;
+        }
+      }
+    }
+
+    &::after{
+      content: "";
+      display: block;
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      border: 2px solid $hover-color;
+      top: 20px;
+      left: -20px;
+      z-index: -1;
+
+      @include responsives.Tablet{
+        width: 300px;
+        height: 300px;
+      }
+    }
+  }
+}

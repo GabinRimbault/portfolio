@@ -1,0 +1,42 @@
+@use "../utils/responsive" as responsives;
+
+.experiences{
+  h2{
+    &:before {
+      content: "2.";
+      margin-right: 5px;
+      color: $hover-color;
+    }
+  }
+
+  .frontend {
+    height: 100%;
+    background-color: $frontend-color;
+    width: 90%;
+  }
+  .html {
+    height: 100%;
+    background-color: $html-color;
+    width: 100%;
+  }
+  .react {
+    height: 100%;
+    background-color: $react-color;
+    width: 60%;
+  }
+  .javascript {
+    height: 100%;
+    background-color: $javascript-color;
+    width: 75%;
+  }
+  .nodejs {
+    height: 100%;
+    background-color: $nodejs-color;
+    width: 50%;
+  }
+  .java {
+    height: 100%;
+    background-color: $java-color;
+    width: 30%;
+  }
+}

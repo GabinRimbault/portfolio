@@ -1,0 +1,21 @@
+@import "./utils/variables";
+@import "./utils/responsive";
+@import "./utils/bootstrap";
+@import "./utils/base";
+@import "./utils/animations";
+
+//app
+@import "./app/wrapper_app";
+@import "./app/menu_left";
+@import "./app/menu_right";
+@import "./app/header";
+@import "./app/footer";
+@import "./app/index";
+@import "./app/about";
+@import "./app/experiences";
+@import "./app/contact";
+@import "./app/labs";
+
+//Components
+@import "./components/components";
+

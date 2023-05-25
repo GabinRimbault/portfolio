@@ -1,2 +1,3 @@
-# portfolio
-Portfolio
+# Portfolio V1 👋
+
+[![Branch](https://img.shields.io/static/v1?label=Branch&message=Master&color=blue)](https://gitlab.com/GabinRimbault/template_project)  [![Version](https://img.shields.io/static/v1?label=Version&message=1.0.0&color=blue)](https://gitlab.com/GabinRimbault/template_project) [![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Frimbault_gabin)](https://twitter.com/rimbault_gabin)

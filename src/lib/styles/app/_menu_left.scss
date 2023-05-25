@@ -1,0 +1,44 @@
+@use "../utils/responsive" as responsives;
+
+.menu_left{
+  font-size: 35px;
+  display: none;
+  padding: 10px;
+  width: 55px;
+  height: auto;
+  position: fixed;
+  bottom: 35%;
+  right: auto;
+  left: 0;
+  color: $tertiary-color;
+  z-index: 10;
+  background-color: $secondary-color;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+
+  @include responsives.Tablet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  ul{
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    a{
+      color: $link-color;
+      font-size: 35px;
+
+      &:hover{
+        color: $hover-color;
+      }
+    }
+  }
+}
