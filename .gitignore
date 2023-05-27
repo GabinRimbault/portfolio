@@ -7,11 +7,10 @@
 
 # testing
 /coverage
-/TODO
 
 # production
 /build
-/.idea
+/TODO
 
 # misc
 .DS_Store
