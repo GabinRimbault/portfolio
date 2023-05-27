@@ -180,7 +180,7 @@ ol a:before {
 }
 @media screen and (min-width: 768px) {
   .header {
-    max-width: 768px;
+    max-width: 630px;
     height: 100px;
     display: flex;
     flex-direction: row;
@@ -365,6 +365,9 @@ footer ul.social {
   }
 }
 
+.experiences .text_experiences p {
+  margin: 20px 10px 0;
+}
 .experiences h2:before {
   content: "2.";
   margin-right: 5px;
@@ -423,42 +426,48 @@ footer ul.social {
   margin-right: 5px;
   color: #0ad6ff;
 }
-@media screen and (min-width: 768px) {
-  .labs .labs_mobile {
-    display: none;
-  }
+.labs .labs_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.labs .labs_mobile .cards {
+.labs .labs_cards .p-labs {
+  min-height: 50px;
+}
+.labs .labs_cards .cards {
   background-color: #233554;
-  padding: 20px;
+  padding: 20px 20px 0;
   border-radius: 5px;
   filter: grayscale(10%) contrast(1);
+  width: 100%;
 }
-.labs .labs_mobile .cards ul.cards_tags {
+@media screen and (min-width: 768px) {
+  .labs .labs_cards .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 0 0 48%;
+  }
+}
+.labs .labs_cards .cards ul.cards_tags {
   display: flex;
   padding: 10px 0;
 }
-.labs .labs_mobile .cards ul.cards_tags li {
+.labs .labs_cards .cards ul.cards_tags li {
   margin-right: 10px;
   color: #ccd6f6;
   font-size: 14px;
   font-family: "Space Mono", monospace;
 }
-.labs .labs_mobile .cards ul.cards_links {
+.labs .labs_cards .cards ul.cards_links {
   display: flex;
   justify-content: end;
+  width: 100%;
 }
-.labs .labs_mobile .cards ul.cards_links a {
+.labs .labs_cards .cards ul.cards_links a {
   margin-right: 20px;
   font-size: 20px;
-}
-.labs .labs_desktop {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .labs .labs_desktop {
-    display: block;
-  }
 }
 
 a {
@@ -548,7 +557,7 @@ h1.heading:after, h2.heading:after, h3.heading:after {
 }
 @media screen and (min-width: 768px) {
   .wrapper {
-    max-width: 720px;
+    max-width: 630px;
   }
 }
 @media screen and (min-width: 1023px) {
@@ -627,7 +636,7 @@ header.nav_bar nav ul li, header.nav_bar nav ol li {
 
 .bloc_information {
   margin-top: 20px;
-  box-shadow: 0px 2px 15px -3px #000000;
+  box-shadow: 0 2px 15px -3px #000000;
   padding: 20px;
   background-color: #FFFFFF;
   font-weight: bold;
