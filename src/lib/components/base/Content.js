@@ -1,6 +1,6 @@
-export default function Content({style, children, ...props}) {
+export default function Content({classContent, children, ...props}) {
   return (
-    <p className={style} {...props}>
+    <p className={classContent} {...props}>
       {children}
     </p>
   )
