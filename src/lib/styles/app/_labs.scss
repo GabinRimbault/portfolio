@@ -9,16 +9,29 @@
     }
   }
 
-  .labs_mobile{
-    @include responsives.Tablet{
-      display: none;
+  .labs_cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .p-labs{
+      min-height: 50px;
     }
 
     .cards{
       background-color: $secondary-color;
-      padding: 20px;
+      padding: 20px 20px 0;
       border-radius: 5px;
       filter: grayscale(10%) contrast(1);
+      width: 100%;
+
+      @include responsives.Tablet{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        flex: 0 0 48%;
+      }
 
       ul.cards_tags {
         display: flex;
@@ -34,19 +47,13 @@
       ul.cards_links {
         display: flex;
         justify-content: end;
+        width: 100%;
+
         a {
           margin-right: 20px;
           font-size: 20px;
         }
       }
-    }
-  }
-
-  .labs_desktop{
-    display: none;
-
-    @include responsives.Tablet{
-      display: block;
     }
   }
 }
