@@ -13,11 +13,11 @@ export default function Index() {
       <Title lvl="h1" >Hey! Je m'appelle,</Title>
       <Title lvl="h2">Gabin RIMBAULT</Title>
       <Title lvl="h3">Je suis passionné par le Web !</Title>
-      <Content style="presentation">En tant que Développeur Web, je me spécialise dans la création et parfois la conception d'expériences web exceptionnelles.
+      <Content classContent="presentation">En tant que Développeur Web, je me spécialise dans la création et parfois la conception d'expériences web exceptionnelles.
         Mon objectif est de créer des produits accessibles et axés sur l'humain.
       </Content>
       <hr/>
-      <Content className="presentation">
+      <Content classContent="presentation">
         Je suis constamment inspiré par les défis techniques et l'opportunité de repousser les limites pour offrir des solutions innovantes.
         Je suis impatient de collaborer avec toi pour réaliser des projets Web passionnants et marquants !
       </Content>
