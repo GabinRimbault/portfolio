@@ -10,7 +10,7 @@ export default function TextExperiences() {
     <div className="text_experiences col-md-6">
       <Content classContent={"p-description"}>
         J'ai acquis une solide expérience en développement front-end, notamment sur les technologies clés telles que
-        <a href={liens_w3C} target="_blank">HTML, CSS, et JavaScript</a>. Au fil des années, j'ai travaillé sur de nombreux projets web où j'ai eu l'opportunité
+        <a href={liens_w3C} target="_blank"> HTML, CSS, et JavaScript</a>. Au fil des années, j'ai travaillé sur de nombreux projets web où j'ai eu l'opportunité
         de créer des interfaces utilisateur attrayantes et réactives.
       </Content>
       <Content classContent={"p-description"}>
