@@ -3,7 +3,7 @@ import List from "../../../lib/components/base/List";
 export default function MenuRightHeader() {
   const liens = {
     link1: {
-      liens: ["/about", "About"]
+      liens: ["/about", "A propos"]
     },
     link2: {
       liens: ["/experiences", "Experiences"]
@@ -13,9 +13,6 @@ export default function MenuRightHeader() {
     },
     link4: {
       liens: ["/contact", "Contact"]
-    },
-    link5: {
-      liens: ["/cv", "CV"]
     }
   }
 

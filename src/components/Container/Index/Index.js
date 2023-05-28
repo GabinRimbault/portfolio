@@ -8,7 +8,7 @@ export default function Index() {
     <div className="index">
       <div className="menu_mobile">
         <Link to={"/contact"}><i className="fa-solid fa-arrow-left"></i> ?</Link>
-        <Link to={"/about"}>/about <i className="fa-solid fa-arrow-right"></i></Link>
+        <Link to={"/about"}>/apropos <i className="fa-solid fa-arrow-right"></i></Link>
       </div>
       <Title lvl="h1" >Hey! Je m'appelle,</Title>
       <Title lvl="h2">Gabin RIMBAULT</Title>

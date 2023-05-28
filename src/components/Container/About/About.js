@@ -12,7 +12,7 @@ export default function About() {
         <Link to={"/"}><i className="fa-solid fa-arrow-left"></i> /</Link>
         <Link to={"/experiences"}>/experiences <i className="fa-solid fa-arrow-right"></i></Link>
       </div>
-      <Title classTitle="heading" lvl="h2">About</Title>
+      <Title classTitle="heading" lvl="h2">A propos</Title>
       <div className="wrapper_about">
         <div className="about_content">
           <TextAbout />
