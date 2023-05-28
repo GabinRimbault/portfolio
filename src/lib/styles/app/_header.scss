@@ -19,10 +19,6 @@
     color: $link-color;
     cursor: pointer;
     font-size: 25px;
-    transform: rotate(45deg);
-    border: 1px solid $hover-color;
-    border-radius: 20px;
-    padding: 10px;
 
     @include responsives.Tablet{
       font-size: 42px;

@@ -197,10 +197,6 @@ ol a:before {
   color: #ccd6f6;
   cursor: pointer;
   font-size: 25px;
-  transform: rotate(45deg);
-  border: 1px solid #0ad6ff;
-  border-radius: 20px;
-  padding: 10px;
 }
 @media screen and (min-width: 768px) {
   .header .logo {
@@ -365,9 +361,6 @@ footer ul.social {
   }
 }
 
-.experiences .text_experiences p {
-  margin: 20px 10px 0;
-}
 .experiences h2:before {
   content: "2.";
   margin-right: 5px;
@@ -449,24 +442,32 @@ footer ul.social {
     align-items: flex-start;
     flex: 0 0 48%;
   }
+  .labs .labs_cards .cards:first-child {
+    flex: 0 0 97%;
+  }
 }
-.labs .labs_cards .cards ul.cards_tags {
+.labs .labs_cards .cards .cards_options {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.labs .labs_cards .cards .cards_options ul.cards_tags {
   display: flex;
   padding: 10px 0;
 }
-.labs .labs_cards .cards ul.cards_tags li {
+.labs .labs_cards .cards .cards_options ul.cards_tags li {
   margin-right: 10px;
   color: #ccd6f6;
   font-size: 14px;
   font-family: "Space Mono", monospace;
 }
-.labs .labs_cards .cards ul.cards_links {
+.labs .labs_cards .cards .cards_options ul.cards_links {
   display: flex;
-  justify-content: end;
-  width: 100%;
 }
-.labs .labs_cards .cards ul.cards_links a {
+.labs .labs_cards .cards .cards_options ul.cards_links li:first-child a {
   margin-right: 20px;
+}
+.labs .labs_cards .cards .cards_options ul.cards_links a {
   font-size: 20px;
 }
 
@@ -585,7 +586,7 @@ p.p-description {
 }
 @media screen and (min-width: 768px) {
   p.p-description {
-    margin: 20px 50px 0;
+    margin: 20px 10px 0;
   }
 }
 p.p-overline {

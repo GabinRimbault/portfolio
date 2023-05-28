@@ -1,12 +1,6 @@
 @use "../utils/responsive" as responsives;
 
 .experiences{
-  .text_experiences{
-    p{
-      margin: 20px 10px 0;
-    }
-  }
-
   h2{
     &:before {
       content: "2.";
