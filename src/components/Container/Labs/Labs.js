@@ -92,7 +92,7 @@ export default function Labs() {
           </div>
         </Cards>
       </div>
-      <Content classContent="p-description mt-4">Pour voir d'autre projet retrouvez moi sur <a href="https://github.com/GabinRimbault" target="_blank">Github</a></Content>
+      <Content classContent="p-description mt-4">Pour voir d'autre projet retrouvez moi sur <a href="https://github.com/GabinRimbault">Github</a></Content>
       <Button href="/contact" classBtn="btn mt-4">
         Et si on discutait ? <i className="fa-sharp fa-solid fa-mug-saucer"></i>
       </Button>
