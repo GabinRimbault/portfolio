@@ -19,7 +19,7 @@ export default function Index() {
       <hr/>
       <Content classContent="presentation">
         Je suis constamment inspiré par les défis techniques et l'opportunité de repousser les limites pour offrir des solutions innovantes.
-        Je suis impatient de collaborer avec toi pour réaliser des projets Web passionnants et marquants !
+        Je suis impatient de collaborer avec vous pour réaliser des projets Web passionnants et marquants !
       </Content>
       <Button href="/about" classBtn="btn mt-4">Pour mieux me connaitre <i className="fa-solid fa-arrow-down"></i></Button>
     </div>
