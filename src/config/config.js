@@ -28,12 +28,12 @@ const config = {
     }
   },
   skills: [
-    <i className="fa-brands fa-html5"></i>,
-    <i className="fa-brands fa-css3-alt"></i>,
-    <i className="fa-brands fa-js"></i>,
-    <i className="fa-brands fa-react"></i>,
-    <i className="fa-brands fa-node-js"></i>,
-    <i className="fa-brands fa-python"></i>
+    <i className="fa-brands fa-html5" style={{color: "#f25220"}}></i>,
+    <i className="fa-brands fa-css3-alt" style={{color: "#2191ec"}}></i>,
+    <i className="fa-brands fa-js" style={{color: "#f2d400"}}></i>,
+    <i className="fa-brands fa-react" style={{color: "#5cceed"}}></i>,
+    <i className="fa-brands fa-node-js" style={{color: "#509540"}}></i>,
+    <i className="fa-brands fa-python" style={{color: "#3173aa"}}></i>
   ]
 }
 
