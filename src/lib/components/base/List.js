@@ -1,5 +1,3 @@
-import Button from "./Button.js";
-
 export default function List({ type = "ul", data = [] | {}, classList }) {
   const Type = type === "ol" || type === "ul" ? type : "ul";
   let listItems = null;
@@ -11,7 +9,7 @@ export default function List({ type = "ul", data = [] | {}, classList }) {
   } else if (typeof data === "object" && data !== null) {
     listItems = Object.entries(data).map(([key, value], index) => (
       <li key={index} id={key}>
-        <Button href={value.liens[0]}>{value.liens[1]}</Button>
+        <a alt={"Lien " +key} href={value.liens[0]}>{value.liens[1]}</a>
       </li>
     ));
   }

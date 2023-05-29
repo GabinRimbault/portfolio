@@ -5,47 +5,9 @@ import Content from "../../../lib/components/base/Content";
 import List from "../../../lib/components/base/List";
 import Button from "../../../lib/components/base/Button";
 import TextLabs from "./TextLabs";
-import {useState} from "react";
+import labs from "../../../config/labs";
 
 export default function Labs() {
-
-  const [infos, setInfos] = useState({
-    booki: {
-      tags: ["HTML", "CSS"],
-      links: {
-        download: {
-          liens: ["https://github.com/GabinRimbault/Booki.git", <i className="fas fa-share-square fa-rotate-270"></i>]
-        },
-        share: {
-          liens: ["https://github.com/GabinRimbault/Booki", <i className="fa-brands fa-github"></i>]
-        }
-      }
-    },
-    portfolio: {
-      tags: ["Javascript", "React"],
-      links: {
-        download: {
-          liens: ["https://github.com/GabinRimbault/portfolio.git", <i className="fas fa-share-square fa-rotate-270"></i>]
-        },
-        share: {
-          liens: ["https://github.com/GabinRimbault/portfolio", <i className="fa-brands fa-github"></i>]
-        }
-      }
-    },
-    velolyon: {
-      tags: ["Javascript Vanilla", "HTML", "CSS"],
-      links: {
-        download: {
-          liens: ["https://github.com/GabinRimbault/VeloLyonJS.git", <i className="fas fa-share-square fa-rotate-270"></i>]
-        },
-        share: {
-          liens: ["https://github.com/GabinRimbault/VeloLyonJS", <i className="fa-brands fa-github"></i>]
-        }
-      }
-    }
-  });
-
-
   return (
     <div className="labs">
       <div className="menu_mobile">
@@ -64,8 +26,8 @@ export default function Labs() {
             Implémenter une interface responsive
           </Content>
           <div className="cards_options">
-            <List type="ul" data={infos.booki.tags} classList="cards_tags" />
-            <List type="ul" data={infos.booki.links} classList="cards_links" />
+            <List type="ul" data={labs.repos.booki.tags} classList="cards_tags" />
+            <List type="ul" data={labs.repos.booki.links} classList="cards_links" />
           </div>
         </Cards>
         <Cards>
@@ -75,8 +37,8 @@ export default function Labs() {
             Il offre aux visiteurs une expérience utilisateur conviviale et met en valeur mon expertise dans la création de sites web modernes et réactifs.
           </Content>
           <div className="cards_options">
-            <List type="ul" data={infos.portfolio.tags} classList="cards_tags" />
-            <List type="ul" data={infos.portfolio.links} classList="cards_links" />
+            <List type="ul" data={labs.repos.portfolio.tags} classList="cards_tags" />
+            <List type="ul" data={labs.repos.portfolio.links} classList="cards_links" />
           </div>
         </Cards>
         <Cards>
@@ -87,8 +49,8 @@ export default function Labs() {
             Utilisation de la POO en Javascript.
           </Content>
           <div className="cards_options">
-            <List type="ul" data={infos.velolyon.tags} classList="cards_tags" />
-            <List type="ul" data={infos.velolyon.links} classList="cards_links" />
+            <List type="ul" data={labs.repos.velolyon.tags} classList="cards_tags" />
+            <List type="ul" data={labs.repos.velolyon.links} classList="cards_links" />
           </div>
         </Cards>
       </div>
