@@ -1,4 +1,5 @@
 import Content from "../../../lib/components/base/Content";
+import SkillsExperiences from "./SkillsExperiences";
 
 export default function TextExperiences() {
 
@@ -7,12 +8,15 @@ export default function TextExperiences() {
   const liens_accessible = "https://www.w3.org/WAI/fundamentals/accessibility-intro/fr";
 
   return (
-    <div className="text_experiences col-md-6">
-      <Content classContent={"p-description"}>
-        J'ai acquis une solide expérience en développement front-end, notamment sur les technologies clés telles que
-        <a href={liens_w3C} alt="lien vers w3c"> HTML, CSS, et JavaScript</a>. Au fil des années, j'ai travaillé sur de nombreux projets web où j'ai eu l'opportunité
-        de créer des interfaces utilisateur attrayantes et réactives.
-      </Content>
+    <div className="text_experiences">
+      <div className="row">
+        <Content classContent={"p-description col-md-6"}>
+          J'ai acquis une solide expérience en développement front-end, notamment sur les technologies clés telles que
+          <a href={liens_w3C} alt="lien vers w3c"> HTML, CSS, et JavaScript</a>. Au fil des années, j'ai travaillé sur de nombreux projets web où j'ai eu l'opportunité
+          de créer des interfaces utilisateur attrayantes et réactives.
+        </Content>
+        <SkillsExperiences />
+      </div>
       <Content classContent={"p-description"}>
         L'expertise en développement <a href={liens_front} alt="Liens vers zdnet">front-end</a> est essentielle dans le monde numérique d'aujourd'hui.
         En tant que développeur front-end, je suis chargé de traduire les concepts et les maquettes graphiques

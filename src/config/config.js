@@ -26,7 +26,15 @@ const config = {
     mail: {
       liens: ["mailto:gabin.rimbault@icloud.com?subject='Hello ! from Website'", <i className="fa-solid fa-envelope"></i>]
     }
-  }
+  },
+  skills: [
+    <i className="fa-brands fa-html5"></i>,
+    <i className="fa-brands fa-css3-alt"></i>,
+    <i className="fa-brands fa-js"></i>,
+    <i className="fa-brands fa-react"></i>,
+    <i className="fa-brands fa-node-js"></i>,
+    <i className="fa-brands fa-python"></i>
+  ]
 }
 
 export default config;
