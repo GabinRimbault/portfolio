@@ -303,19 +303,16 @@ footer ul.social {
   line-height: 24px;
 }
 .about .wrapper_img_about {
-  margin: 25px auto;
+  margin: 25px auto 50px;
   background-color: #0ad6ff;
   position: relative;
   z-index: 1;
-  margin-bottom: 50px;
   width: 250px;
   height: 250px;
 }
 @media screen and (min-width: 768px) {
   .about .wrapper_img_about {
     margin-bottom: inherit;
-    width: 300px;
-    height: 300px;
   }
 }
 .about .wrapper_img_about .img_about {
@@ -327,21 +324,10 @@ footer ul.social {
   width: 250px;
   height: 250px;
 }
-@media screen and (min-width: 768px) {
-  .about .wrapper_img_about .img_about {
-    width: 300px;
-    height: 300px;
-  }
-}
 .about .wrapper_img_about .img_about img {
   max-width: 250px;
   max-height: 250px;
-}
-@media screen and (min-width: 768px) {
-  .about .wrapper_img_about .img_about img {
-    max-width: 300px;
-    max-height: 300px;
-  }
+  width: 250px;
 }
 .about .wrapper_img_about::after {
   content: "";
@@ -353,12 +339,6 @@ footer ul.social {
   top: 20px;
   left: -20px;
   z-index: -1;
-}
-@media screen and (min-width: 768px) {
-  .about .wrapper_img_about::after {
-    width: 300px;
-    height: 300px;
-  }
 }
 
 .experiences h2:before {

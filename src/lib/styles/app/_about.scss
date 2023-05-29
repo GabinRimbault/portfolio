@@ -49,18 +49,15 @@
   }
 
   .wrapper_img_about{
-    margin: 25px auto;
+    margin: 25px auto 50px;
     background-color: $hover-color;
     position: relative;
     z-index: 1;
-    margin-bottom: 50px;
     width: 250px;
     height: 250px;
 
     @include responsives.Tablet{
       margin-bottom: inherit;
-      width: 300px;
-      height: 300px;
     }
 
     .img_about{
@@ -72,19 +69,10 @@
       width: 250px;
       height: 250px;
 
-      @include responsives.Tablet{
-        width: 300px;
-        height: 300px;
-      }
-
       img{
         max-width: 250px;
         max-height: 250px;
-
-        @include responsives.Tablet{
-          max-width: 300px;
-          max-height: 300px;
-        }
+        width: 250px;
       }
     }
 
@@ -98,11 +86,6 @@
       top: 20px;
       left: -20px;
       z-index: -1;
-
-      @include responsives.Tablet{
-        width: 300px;
-        height: 300px;
-      }
     }
   }
 }
