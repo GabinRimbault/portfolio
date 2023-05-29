@@ -346,35 +346,19 @@ footer ul.social {
   margin-right: 5px;
   color: #0ad6ff;
 }
-.experiences .frontend {
-  height: 100%;
-  background-color: #0ad6ff;
-  width: 90%;
+.experiences .text_experiences p:first-child {
+  margin: 0 10px;
 }
-.experiences .html {
+.experiences ul.skills {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
   height: 100%;
-  background-color: rgb(255, 34, 83);
-  width: 100%;
 }
-.experiences .react {
-  height: 100%;
-  background-color: rgb(210, 108, 213);
-  width: 60%;
-}
-.experiences .javascript {
-  height: 100%;
-  background-color: #FFF01F;
-  width: 75%;
-}
-.experiences .nodejs {
-  height: 100%;
-  background-color: #ab20fd;
-  width: 50%;
-}
-.experiences .java {
-  height: 100%;
-  background-color: #56fca2;
-  width: 30%;
+.experiences ul.skills li {
+  margin-right: 15px;
+  font-size: 50px;
 }
 
 .contact {
