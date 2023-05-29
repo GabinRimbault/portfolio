@@ -77,7 +77,6 @@ ol a:before {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  animation: 2s slide-up;
 }
 .wrapper_app .app {
   flex-grow: 1;
