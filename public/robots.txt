@@ -1,0 +1,6 @@
+User-agent: *
+Allow: https://www.gabinrimbault.com/
+Allow: https://www.gabinrimbault.com/about
+Allow: https://www.gabinrimbault.com/experiences
+Allow: https://www.gabinrimbault.com/labs
+Allow: https://www.gabinrimbault.com/contact
