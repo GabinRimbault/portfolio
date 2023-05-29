@@ -9,7 +9,7 @@ import Contact from "./Contact/Contact";
 export default function Container() {
   return (
     <>
-      <Wrapper classWrapper={"wrapper_section"}>
+      <Wrapper>
         <Route exact path="/" component={Index} />
         <Route exact path="/about" component={About} />
         <Route exact path="/experiences" component={Experiences} />

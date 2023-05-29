@@ -86,9 +86,6 @@ ol a:before {
   padding: 50px 20px 20px;
   height: auto;
 }
-.wrapper_app .app .wrapper_section {
-  animation: 2s slide-up;
-}
 .wrapper_app .menu_mobile {
   padding: 0 0 20px;
   display: flex;
