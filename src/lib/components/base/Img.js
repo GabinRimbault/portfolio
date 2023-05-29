@@ -1,6 +1,6 @@
 export default function Img({src, alt = "alt", classImg, ...props}) {
   const style = classImg !== undefined ? classImg + " img-fluid" : "img-fluid"
-  let imgsrc = src !== undefined ? src : "http://via.placeholder.com/300x300";
+  let imgsrc = src !== undefined ? src : "http://via.placeholder.com/250x250";
 
   return (
     <>

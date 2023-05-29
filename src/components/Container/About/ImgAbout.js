@@ -1,5 +1,5 @@
 import Img from "../../../lib/components/base/Img";
-import PhotoSrc from "./img_perso.png";
+import PhotoSrc from "./photos.png";
 
 export default function ImgAbout() {
   return (
