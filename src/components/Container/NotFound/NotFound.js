@@ -7,8 +7,8 @@ export default function NotFound() {
   return (
     <div className="not_found">
       <div className="menu_mobile">
-        <Link to={"/"}><i className="fa-solid fa-arrow-left"></i> /</Link>
-        <Link to={"/about"}>/apropos <i className="fa-solid fa-arrow-right"></i></Link>
+        <Link to={"/#root"}><i className="fa-solid fa-arrow-left"></i> /</Link>
+        <Link to={"/about#root"}>/apropos <i className="fa-solid fa-arrow-right"></i></Link>
       </div>
       <Title lvl="h1">
         Erreur 404 : Page introuvable
@@ -24,7 +24,7 @@ export default function NotFound() {
         Merci de votre compréhension, et rappelez-vous toujours : "Il n'y a pas d'erreur, seulement des opportunités de debug !"
       </Content>
 
-      <Button href="/" classBtn="btn mt-4">Retour a l'accueil</Button>
+      <Button href="/#root" classBtn="btn mt-4">Retour a l'accueil</Button>
     </div>
   )
 }

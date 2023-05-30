@@ -9,7 +9,13 @@ export default function List({ type = "ul", data = [] | {}, classList }) {
   } else if (typeof data === "object" && data !== null) {
     listItems = Object.entries(data).map(([key, value], index) => (
       <li key={index} id={key}>
-        <a alt={"Lien " +key} href={value.liens[0]}>{value.liens[1]}</a>
+        <a alt={"Lien " + key} href={value.liens[0]}>
+          {value.icons && value.icons[0] === "left" && value.icons[1]}
+          {value.icons && value.icons[0] === "left" && " "}
+          {value.liens[1]}
+          {value.icons && value.icons[0] === "right" && " "}
+          {value.icons && value.icons[0] === "right" && value.icons[1]}
+        </a>
       </li>
     ));
   }
@@ -20,15 +26,3 @@ export default function List({ type = "ul", data = [] | {}, classList }) {
     </Type>
   );
 }
-/*
-Exemple :
-
-const liens = {
-    link1: {
-      liens: ["www.googe.fr", "Google"]
-    },
-    link2: {
-      liens: ["www.ebay.fr", "Ebay"]
-    }
-  }
- */

@@ -1,16 +1,16 @@
 const config = {
   header: {
     about: {
-      liens: ["/about", "A propos"]
+      liens: ["/about#root", "A propos"]
     },
     experiences: {
-      liens: ["/experiences", "Experiences"]
+      liens: ["/experiences#root", "Experiences"]
     },
     labs: {
-      liens: ["/labs", "Labs"]
+      liens: ["/labs#root", "Labs"]
     },
     contact: {
-      liens: ["/contact", "Contact"]
+      liens: ["/contact#root", "Contact"]
     }
   },
   icons: {
@@ -34,7 +34,8 @@ const config = {
     <i className="fa-brands fa-react" style={{color: "#5cceed"}}></i>,
     <i className="fa-brands fa-node-js" style={{color: "#509540"}}></i>,
     <i className="fa-brands fa-python" style={{color: "#3173aa"}}></i>
-  ]
+  ],
+
 }
 
 export default config;

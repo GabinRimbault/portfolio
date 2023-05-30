@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-Allow: /public/
 Sitemap: https://www.gabinrimbault.com/sitemap.xml

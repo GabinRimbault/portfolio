@@ -11,8 +11,8 @@ export default function Labs() {
   return (
     <div className="labs">
       <div className="menu_mobile">
-        <Link to={"/experiences"}><i className="fa-solid fa-arrow-left"></i> /experiences</Link>
-        <Link to={"/contact"}>/contact <i className="fa-solid fa-arrow-right"></i></Link>
+        <Link to={"/experiences#root"}><i className="fa-solid fa-arrow-left"></i> /experiences</Link>
+        <Link to={"/contact#root"}>/contact <i className="fa-solid fa-arrow-right"></i></Link>
       </div>
       <Title classTitle="heading" lvl="h2">Labs</Title>
       <TextLabs />
@@ -55,7 +55,7 @@ export default function Labs() {
         </Cards>
       </div>
       <Content classContent="p-description mt-4">Pour voir d'autre projet retrouvez moi sur <a href="https://github.com/GabinRimbault">Github</a></Content>
-      <Button href="/contact" classBtn="btn mt-4">
+      <Button href="/contact#root" classBtn="btn mt-4">
         Et si on discutait ? <i className="fa-sharp fa-solid fa-mug-saucer"></i>
       </Button>
     </div>

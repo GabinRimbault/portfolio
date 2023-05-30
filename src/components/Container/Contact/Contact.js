@@ -6,8 +6,8 @@ export default function Contact() {
   return (
     <>
       <div className="menu_mobile">
-        <Link to={"/labs"}><i className="fa-solid fa-arrow-left"></i> /labs</Link>
-        <Link to={"/"}>/ <i className="fa-solid fa-arrow-right"></i></Link>
+        <Link to={"/labs#root"}><i className="fa-solid fa-arrow-left"></i> /labs</Link>
+        <Link to={"/#root"}>/ <i className="fa-solid fa-arrow-right"></i></Link>
       </div>
       <div className="text-center contact">
         <Title classTitle="heading" lvl="h2">Et maintenant ?</Title>

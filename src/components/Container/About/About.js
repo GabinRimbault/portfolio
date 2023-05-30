@@ -9,8 +9,8 @@ export default function About() {
   return (
     <div className="about">
       <div className="menu_mobile">
-        <Link to={"/"}><i className="fa-solid fa-arrow-left"></i> /</Link>
-        <Link to={"/experiences"}>/experiences <i className="fa-solid fa-arrow-right"></i></Link>
+        <Link to={"/#root"}><i className="fa-solid fa-arrow-left"></i> /</Link>
+        <Link to={"/experiences#root"}>/experiences <i className="fa-solid fa-arrow-right"></i></Link>
       </div>
       <Title classTitle="heading" lvl="h2">A propos</Title>
       <div className="wrapper_about">
@@ -22,7 +22,7 @@ export default function About() {
           <ImgAbout />
         </div>
       </div>
-      <Button href="/experiences" classBtn="btn mt-4">
+      <Button href="/experiences#root" classBtn="btn mt-4">
         Continuer la visite <i className="fa-solid fa-arrow-down"></i>
       </Button>
     </div>
