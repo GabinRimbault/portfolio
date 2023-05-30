@@ -2,8 +2,15 @@ import {Link} from "react-router-dom";
 import Title from "../../../lib/components/base/Title";
 import TextExperiences from "./TextExperiences";
 import Button from "../../../lib/components/base/Button";
+import {useEffect} from "react";
+import {scrollToAnchor} from "../../../lib/js/scroll";
 
 export default function Experiences() {
+
+  useEffect(() => {
+    scrollToAnchor();
+  }, []);
+
   return (
     <div className="experiences">
       <div className="menu_mobile">

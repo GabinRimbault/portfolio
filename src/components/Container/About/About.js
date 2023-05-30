@@ -4,8 +4,15 @@ import TextAbout from "./TextAbout";
 import SkillsList from "./SkillsList";
 import ImgAbout from "./ImgAbout";
 import Button from "../../../lib/components/base/Button";
+import {useEffect} from "react";
+import {scrollToAnchor} from "../../../lib/js/scroll";
 
 export default function About() {
+
+  useEffect(() => {
+    scrollToAnchor();
+  }, []);
+
   return (
     <div className="about">
       <div className="menu_mobile">

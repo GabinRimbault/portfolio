@@ -6,8 +6,15 @@ import List from "../../../lib/components/base/List";
 import Button from "../../../lib/components/base/Button";
 import TextLabs from "./TextLabs";
 import labs from "../../../config/labs";
+import {useEffect} from "react";
+import {scrollToAnchor} from "../../../lib/js/scroll";
 
 export default function Labs() {
+
+  useEffect(() => {
+    scrollToAnchor();
+  }, []);
+
   return (
     <div className="labs">
       <div className="menu_mobile">
